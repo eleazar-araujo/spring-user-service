@@ -1,10 +1,10 @@
 package com.alejandro.userservice.controllers;
 
 public class User {
-    private final long id;
-    private final String firstName;
-    private final String lastName;
-    private final String email;
+    private long id;
+    private String firstName;
+    private String lastName;
+    private String email;
 
     public long getId() {
         return id;
@@ -21,6 +21,8 @@ public class User {
     public String getEmail() {
         return email;
     }
+
+    public User(){}
 
     public User(long id, String firstName, String lastName, String email) {
         this.id = id;
